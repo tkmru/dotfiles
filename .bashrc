@@ -21,6 +21,7 @@ alias mkdir='mkdir -p'
 alias up='cd ..;'
 alias la='ls -laFG'
 alias cl='clear'
+alias tm='tmux'
 alias be='bundle exec'
 
 # check the window size after each command and, if necessary,
@@ -38,7 +39,9 @@ export PATH='/usr/local/heroku/bin:$PATH'
 alias upypi='python setup.py sdist bdist_wheel upload'
 alias rpypi='python setup.py register'
 
-# mac only
+############
+# mac only #
+############
 cdf () {
     target=`osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)'`
     if [ "$target" != "" ]; then
