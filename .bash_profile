@@ -14,6 +14,7 @@ export PATH
 # for brew
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
+    . $(brew --prefix)/etc/profile.d/z.sh # for z
 fi
 
 # for cabal
