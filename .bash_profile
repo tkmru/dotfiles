@@ -38,3 +38,7 @@ export DOCKER_HOST=tcp://localhost:4243
 export GOPATH="$HOME/go/thirdparty:$HOME/go/myproject"
 export PATH="$HOME/go/thirdparty/bin:$HOME/go/myproject/bin:$PATH"
 
+# for c, cpp
+export CPATH="$CPATH:/usr/local/include"
+export LIBRARY_PATH="$LIBRARY_PATH:/usr/local/lib"
+
