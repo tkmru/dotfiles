@@ -1,4 +1,4 @@
-l() {
+function l() {
     # if the argument is a single file or stdin is pipe
     if [[ ($# -eq 1 && -f "$1") || (-p /dev/stdin) ]]; then
         ${PAGER:-less -R} "$@"
@@ -7,12 +7,16 @@ l() {
     fi
 }
 
-h() {
+function h() {
     if [[ $# -gt 0 ]]; then
         history | tail -r | sort -k2 -u | sort | grep "$@"
     else
         history 50
     fi
+}
+
+function cd() {
+    builtin cd $@ && ls -FG;
 }
 
 alias cd='cd -P'
@@ -42,10 +46,10 @@ alias rpypi='python setup.py register'
 ############
 # mac only #
 ############
-cdf () {
+function cdf () {
     target=`osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)'`
     if [ "$target" != "" ]; then
-        cd "$target"
+        builtin cd "$target"
             pwd
     else
         echo 'No Finder window found' >&2
