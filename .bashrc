@@ -25,6 +25,7 @@ alias mkdir='mkdir -p'
 alias up='cd ..;'
 alias la='ls -laFG'
 alias cl='clear'
+alias g='git'
 alias tm='tmux'
 alias be='bundle exec'
 
