@@ -60,4 +60,4 @@ function cdf () {
 alias f='open .'
 alias objcopy='gobjcopy'
 alias objdump='gobjdump'
-alias objdump='greadelf'
+alias readelf='greadelf'
