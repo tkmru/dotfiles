@@ -9,6 +9,7 @@ PATH=$PATH:/sbin
 PATH=$PATH:/usr/bin
 PATH=$PATH:/usr/local/bin
 PATH=$PATH:/usr/local/sbin
+PATH=$PATH:~/Library/Android/sdk/platform-tools
 export PATH
 
 # for brew
