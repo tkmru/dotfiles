@@ -43,3 +43,6 @@ export PATH="$HOME/go/thirdparty/bin:$HOME/go/myproject/bin:$PATH"
 export CPATH="$CPATH:/usr/local/include"
 export LIBRARY_PATH="$LIBRARY_PATH:/usr/local/lib"
 
+# for nvm
+export NVM_DIR="/Users/takemaru/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
