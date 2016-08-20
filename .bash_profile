@@ -27,7 +27,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # for pyenv
 export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 # for MacPorts
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
@@ -44,5 +44,5 @@ export CPATH="$CPATH:/usr/local/include"
 export LIBRARY_PATH="$LIBRARY_PATH:/usr/local/lib"
 
 # for nvm
-export NVM_DIR="/Users/takemaru/.nvm"
+export NVM_DIR="/Users/$USER/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
