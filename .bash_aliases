@@ -21,6 +21,16 @@ cd() {
     builtin cd -P $@ && ls -FG;
 }
 
+aslr() {
+    if [ $(cat /proc/sys/kernel/randomize_va_space) -eq 0 ]; then
+        echo 2 > /proc/sys/kernel/randomize_va_space
+        echo '[+] ASLR Re-enabled.'
+    else
+        echo 0 > /proc/sys/kernel/randomize_va_space
+        echo '[+] ASLR Disabled.'
+    fi
+}
+
 alias up='cd ..;'
 alias rm='rm -ir'
 alias mkdir='mkdir -p'
@@ -29,3 +39,5 @@ alias cl='clear'
 alias g='git'
 alias gdb='gdb -q'
 alias tm='tmux'
+alias q='exit'
+
