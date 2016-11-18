@@ -11,7 +11,7 @@ l() {
 
 h() {
     if [[ $# -gt 0 ]]; then
-        history | tail -r | sort -k2 -u | sort | grep "$@"
+        history | tac | sort -k2 -u | sort | grep "$@"
     else
         history 50
     fi
