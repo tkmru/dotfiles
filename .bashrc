@@ -16,10 +16,9 @@ function h() {
 }
 
 function cd() {
-    builtin cd $@ && ls -FG;
+    builtin cd -P $@ && ls -FG;
 }
 
-alias cd='cd -P'
 alias rm='rm -ir'
 alias mkdir='mkdir -p'
 alias up='cd ..;'

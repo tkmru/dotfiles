@@ -17,7 +17,10 @@ h() {
     fi
 }
 
-alias cd='cd -P'
+cd() {
+    builtin cd -P $@ && ls -FG;
+}
+
 alias up='cd ..;'
 alias rm='rm -ir'
 alias mkdir='mkdir -p'
