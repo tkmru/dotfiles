@@ -5,7 +5,7 @@ l() {
     if [[ ($# -eq 1 && -f "$1") || (-p /dev/stdin) ]]; then
         ${PAGER:-less -R} "$@"
     else
-        ls --color=auto "$@"
+        ls --color=auto -FG "$@"
     fi
 }
 
