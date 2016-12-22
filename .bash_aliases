@@ -31,6 +31,7 @@ aslr() {
     fi
 }
 
+alias pbcopy='xsel --clipboard --input'
 alias up='cd ..;'
 alias rm='rm -ir'
 alias mkdir='mkdir -p'
