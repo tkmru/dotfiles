@@ -31,6 +31,7 @@ aslr() {
     fi
 }
 
+alias digz='dig -tAXFR'
 alias pbcopy='xsel --clipboard --input'
 alias up='cd ..;'
 alias rm='rm -ir'
