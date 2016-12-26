@@ -10,6 +10,7 @@ PATH=$PATH:/usr/bin
 PATH=$PATH:/usr/local/bin
 PATH=$PATH:/usr/local/sbin
 PATH=$PATH:~/Library/Android/sdk/platform-tools
+PATH=$PATH:~/Library/Android/android-ndk-r12b
 export PATH
 
 # for brew
@@ -35,7 +36,7 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 # for docker
 export DOCKER_HOST=tcp://localhost:4243
 
-# fot go
+# for go
 export GOPATH="$HOME/go/thirdparty:$HOME/go/myproject"
 export PATH="$HOME/go/thirdparty/bin:$HOME/go/myproject/bin:$PATH"
 
