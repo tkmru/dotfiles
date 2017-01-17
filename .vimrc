@@ -1,5 +1,4 @@
 " setting
-set number
 set title
 set ambiwidth=double
 set tabstop=4
@@ -12,10 +11,13 @@ set virtualedit=block
 set whichwrap=b,s,[,],<,>
 set backspace=indent,eol,start
 set wildmode=longest:full,full
+set nobackup
+set smartcase
 
 " display
 syntax on               " syntax highlighting
-"set ruler              " show cursor position
+set ruler               " show cursor position
+set number
 set laststatus=2        " status line
 set statusline=%<%f%h%m%r%=%b\ 0x%B\ \ %l,%c%V\ %P
                         " status line format
