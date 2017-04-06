@@ -28,6 +28,7 @@ alias g='git'
 alias tm='tmux'
 alias be='bundle exec'
 alias digz='dig -tAXFR'
+alias ckjar='jarsigner -verify -verbose -certs'
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
