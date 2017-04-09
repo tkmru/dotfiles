@@ -1,21 +1,22 @@
 [user]
-	email = i.am.tkmru@gmail.com
-	name = tkmru
+    email = i.am.tkmru@gmail.com
+    name = tkmru
 [core]
-	excludesfile = /Users/takemaru/.gitignore
-	editor = vim
+    excludesfile = /Users/takemaru/.gitignore
+    editor = vim
 [alias]
+    a = add
     br = branch
     cl = clone
     cm = commit
-	co = checkout
+    co = checkout
     ga = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     gr = log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
     l = log
     ph = push
     st = status
 [color]
-	diff = auto
-	status = auto
-	branch = auto
-	grep = auto
+    diff = auto
+    status = auto
+    branch = auto
+    grep = auto
