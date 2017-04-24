@@ -32,6 +32,12 @@ alias ckjar='jarsigner -verify -verbose -certs'
 alias r='rails'
 alias br='bin/rails'
 
+# for stack
+alias ghc="stack ghc --"
+alias ghci="stack ghci"
+alias runghc="stack runghc --"
+alias runhaskell="stack runghc --"
+
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
