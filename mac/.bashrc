@@ -22,6 +22,7 @@ function cd() {
 alias rm='rm -ir'
 alias mkdir='mkdir -p'
 alias up='cd ..;'
+alias ls='ls -FG'
 alias la='ls -laFG'
 alias cl='clear'
 alias g='git'
