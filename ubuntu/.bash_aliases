@@ -43,3 +43,7 @@ alias gdb='gdb -q'
 alias tm='tmux'
 alias q='exit'
 
+alias s32='less /usr/include/asm/unistd_32.h'
+alias s64='less /usr/include/asm/unistd_64.h'
+
+
