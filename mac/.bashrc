@@ -30,6 +30,7 @@ alias rmbr="git branch --merged | grep -v '*' | grep -v 'master' | xargs -I % gi
 alias rmbrall="git branch | grep -v '*' | grep -v 'master' | xargs -I % git branch -D %"
 alias tm='tmux'
 alias be='bundle exec'
+alias bi='bundle install'
 alias digz='dig -tAXFR'
 alias ckjar='jarsigner -verify -verbose -certs'
 alias r='rails'
