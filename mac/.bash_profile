@@ -11,6 +11,7 @@ PATH=$PATH:/usr/local/bin
 PATH=$PATH:/usr/local/sbin
 PATH=$PATH:~/Library/Android/sdk/platform-tools
 PATH=$PATH:~/Library/Android/android-ndk-r12b
+PATH=$PATH:/usr/local/texlive/2015/bin/x86_64-darwin
 export PATH
 
 # for brew
