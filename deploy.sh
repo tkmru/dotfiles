@@ -1,4 +1,7 @@
-#!/bin/bash
+#!/bin/sh
+set -eu
+
+~/dotfiles/bin/setup_mitamae.sh
 
 function logging(){
     echo "> "$*

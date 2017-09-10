@@ -1,5 +1,5 @@
 #!/bin/sh
-set -e
+set -eu
 
 is_setup() {
   echo "Do you setup $1? [y/N]"
