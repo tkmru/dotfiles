@@ -8,7 +8,7 @@ function logging(){
     $*
 }
 
-DOTFILES=($(ls -pd .!(|.) | grep -v "/"))
+DOTFILES=($(ls -a | grep "^\."))
 
 for FILE in ${DOTFILES[@]}; do
     if [ ! -f ~/$FILE ]; then
