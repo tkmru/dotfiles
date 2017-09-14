@@ -29,3 +29,6 @@ fi
 if [ ! -d $HOME/dotfiles ]; then
   git clone https://github.com/tkmru/dotfiles.git ~/dotfiles
 fi
+
+~/dotfiles/bin/setup_mitamae.sh
+~/dotfiles/deploy.sh
