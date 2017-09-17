@@ -1,7 +1,9 @@
 #!/bin/sh
 set -eu
 
-case "$(uname)" in
-  "Darwin") ./bin/mitamae local $@ ./lib/bootstrap.rb ;;
-  *)  sudo -E bin/mitamae local $@ ./lib/bootstrap.rb ;;
-esac
+if [ "$(uname)" == 'Darwin' ]; then
+  ./bin/mitamae local $@ ./lib/bootstrap.rb ;
+
+elif [ "$(uname -n)" == 'ubuntu' ]; then
+  sudo -E bin/mitamae local $@ ./lib/bootstrap.rb ;
+fi
