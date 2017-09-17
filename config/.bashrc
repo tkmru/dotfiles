@@ -35,6 +35,7 @@ alias digz='dig -tAXFR'
 alias ckjar='jarsigner -verify -verbose -certs'
 alias r='rails'
 alias br='bin/rails'
+alias py='python'
 
 # for stack
 alias ghc="stack ghc --"
