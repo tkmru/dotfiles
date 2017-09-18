@@ -10,6 +10,7 @@ $ ./init.sh
 ```
 
 ## Update dotfiles
+Use ```deploy.sh```, when you add dotfiles. 
 
 ```
 $ ./deploy.sh
