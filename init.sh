@@ -15,7 +15,7 @@ is_setup() {
 }
 
 
-if [ "$(uname)" == 'Darwin' ]; then
+if [ "$(uname)" = 'Darwin' ]; then
   if is_setup 'Xcode Command Line Tools'; then
     xcode-select --install
   fi
