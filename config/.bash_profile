@@ -34,9 +34,6 @@ if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 # for MacPorts
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 
-# for docker
-export DOCKER_HOST=tcp://localhost:4243
-
 # for go
 export GOPATH="$HOME/go/thirdparty:$HOME/go/myproject"
 export PATH="$HOME/go/thirdparty/bin:$HOME/go/myproject/bin:$PATH"
