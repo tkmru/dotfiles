@@ -24,6 +24,10 @@ if [ "$(uname)" = 'Darwin' ]; then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     brew doctor
   fi
+
+  if is_setup 'some tools by HomeBrew'; then
+    ~/dotfiles/brew.sh
+  fi
 fi
 
 if [ ! -d $HOME/dotfiles ]; then
