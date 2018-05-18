@@ -45,3 +45,8 @@ export LIBRARY_PATH="$LIBRARY_PATH:/usr/local/lib"
 # for nvm
 export NVM_DIR="/Users/$USER/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# for android
+export PATH="~/Library/Android/sdk/build-tools/27.0.3/:$PATH"
+export PATH="~/Library/Android/sdk/ndk-bundle/ndk-build:$PATH"
+
