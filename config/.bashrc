@@ -36,6 +36,7 @@ alias ckjar='jarsigner -verify -verbose -certs'
 alias r='rails'
 alias br='bin/rails'
 alias py='python'
+alias ungron='gron --ungron'
 
 # for stack
 alias ghc="stack ghc --"

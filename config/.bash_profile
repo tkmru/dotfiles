@@ -7,6 +7,7 @@ export PS1="\[\e[1;32m\]\u: \[\e[1;35m\]\W\[\e[m\]\\$ "
 PATH=$PATH:/bin
 PATH=$PATH:/sbin
 PATH=$PATH:/usr/bin
+PATH=$PATH:/usr/sbin
 PATH=$PATH:/usr/local/bin
 PATH=$PATH:/usr/local/sbin
 PATH=$PATH:~/Library/Android/sdk/platform-tools
