@@ -48,7 +48,7 @@ alias runhaskell="stack runghc --"
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
-# the results of history substitution are not immediately passed to the shell parser. 
+# the results of history substitution are not immediately passed to the shell parser.
 # Instead, the resulting line is loaded into the Readline editing buffer, allowing further modification.
 shopt -s histverify
 
@@ -78,3 +78,9 @@ alias objdump='gobjdump'
 alias readelf='greadelf'
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+function androidscreenshot () {
+    adb shell screencap -p /data/local/tmp/tmp.png
+    adb pull /data/local/tmp/tmp.png
+    adb shell rm /data/local/tmp/tmp.png
+}
