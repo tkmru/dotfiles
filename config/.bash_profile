@@ -49,5 +49,5 @@ export NVM_DIR="/Users/$USER/.nvm"
 
 # for android
 export PATH="~/Library/Android/sdk/build-tools/27.0.3/:$PATH"
-export PATH="~/Library/Android/sdk/ndk-bundle/ndk-build:$PATH"
+export PATH="~/Library/Android/sdk/ndk-bundle/:$PATH"
 
