@@ -64,10 +64,19 @@ alias rpypi='python setup.py register'
 
 # for android
 alias androidip='adb -d shell ip addr show wlan0 | egrep -o "172\.[^\. ]*.[^\. ]*\.[^\. ]*| 192\.168\.[^\. ]*\.[^\. ]*" | head -n 1'
+
 function androidscreenshot () {
     adb shell screencap -p /data/local/tmp/tmp.png
     adb pull /data/local/tmp/tmp.png
     adb shell rm /data/local/tmp/tmp.png
+}
+
+function packagename () {
+    aapt l -a $1 | grep "A: package"
+}
+
+function apkpermission () {
+    aapt l -a $1 | grep -i permission
 }
 
 ############
