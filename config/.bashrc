@@ -55,9 +55,20 @@ shopt -s histverify
 # for heroku
 export PATH='/usr/local/heroku/bin:$PATH'
 
+# for yarn
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
 # for pypi
 alias upypi='python setup.py sdist bdist_wheel upload'
 alias rpypi='python setup.py register'
+
+# for android
+alias androidip='adb -d shell ip addr show wlan0 | egrep -o "172\.[^\. ]*.[^\. ]*\.[^\. ]*| 192\.168\.[^\. ]*\.[^\. ]*" | head -n 1'
+function androidscreenshot () {
+    adb shell screencap -p /data/local/tmp/tmp.png
+    adb pull /data/local/tmp/tmp.png
+    adb shell rm /data/local/tmp/tmp.png
+}
 
 ############
 # mac only #
@@ -76,11 +87,3 @@ alias f='open .'
 alias objcopy='gobjcopy'
 alias objdump='gobjdump'
 alias readelf='greadelf'
-
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-
-function androidscreenshot () {
-    adb shell screencap -p /data/local/tmp/tmp.png
-    adb pull /data/local/tmp/tmp.png
-    adb shell rm /data/local/tmp/tmp.png
-}
