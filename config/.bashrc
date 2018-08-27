@@ -1,3 +1,7 @@
+if [ -f ~/.aliases-for-work ]; then
+    source ~/.aliases-for-work
+fi
+
 function l() {
     # if the argument is a single file or stdin is pipe
     if [[ ($# -eq 1 && -f "$1") || (-p /dev/stdin) ]]; then
