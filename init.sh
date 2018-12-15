@@ -25,8 +25,9 @@ if [ "$(uname)" = 'Darwin' ]; then
     brew doctor
   fi
 
-  if is_setup 'some tools by HomeBrew'; then
+  if is_setup 'some tools by Homebrew and Homebrew cask'; then
     ~/dotfiles/brew.sh
+    ~/dotfiles/cask.sh
   fi
 fi
 

@@ -26,4 +26,5 @@ MItamae::RecipeContext.class_eval do
   end
 end
 
+include_recipe 'recipe_helper'
 include_role node[:platform]

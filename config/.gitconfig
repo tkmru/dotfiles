@@ -2,7 +2,7 @@
     email = i.am.tkmru@gmail.com
     name = tkmru
 [core]
-    excludesfile = /Users/takemaru/.gitignore
+    excludesfile = /Users/takemaru/.gitignore_global
     editor = vim
 [alias]
     a = add
@@ -21,3 +21,8 @@
     status = auto
     branch = auto
     grep = auto
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true

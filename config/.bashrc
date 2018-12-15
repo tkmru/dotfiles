@@ -70,9 +70,14 @@ alias rpypi='python setup.py register'
 alias androidip='adb -d shell ip addr show wlan0 | egrep -o "172\.[^\. ]*.[^\. ]*\.[^\. ]*| 192\.168\.[^\. ]*\.[^\. ]*" | head -n 1'
 
 function androidscreenshot () {
-    adb shell screencap -p /data/local/tmp/tmp.png
-    adb pull /data/local/tmp/tmp.png
-    adb shell rm /data/local/tmp/tmp.png
+    timestamp=$(date +"%Y-%m-%d-%H-%M-%S")
+    adb shell screencap -p /data/local/tmp/screenshot-${timestamp}.png
+    adb pull /data/local/tmp/screenshot-${timestamp}.png
+    adb shell rm /data/local/tmp/screenshot-${timestamp}.png
+}
+
+function androidlog () {
+    pidcat
 }
 
 function packagename () {

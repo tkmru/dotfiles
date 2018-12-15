@@ -4,12 +4,12 @@ fi
 
 export PS1="\[\e[1;32m\]\u: \[\e[1;35m\]\W\[\e[m\]\\$ "
 
-PATH=$PATH:/bin
-PATH=$PATH:/sbin
-PATH=$PATH:/usr/bin
-PATH=$PATH:/usr/sbin
 PATH=$PATH:/usr/local/bin
 PATH=$PATH:/usr/local/sbin
+PATH=$PATH:/usr/bin
+PATH=$PATH:/usr/sbin
+PATH=$PATH:/bin
+PATH=$PATH:/sbin
 PATH=$PATH:~/Library/Android/sdk/platform-tools
 PATH=$PATH:~/Library/Android/android-ndk-r12b
 PATH=$PATH:/usr/local/texlive/2015/bin/x86_64-darwin
@@ -18,7 +18,6 @@ export PATH
 # for brew
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
-    . $(brew --prefix)/etc/profile.d/z.sh # for z
 fi
 
 # for cabal
