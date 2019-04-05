@@ -42,7 +42,6 @@ brew install md5sha1sum
 # Install some security tools
 brew install aircrack-ng
 brew install apktool
-brew install bfg
 brew install binutils
 brew install binwalk
 brew install cifer
@@ -53,10 +52,10 @@ brew install fcrackzip
 brew install foremost
 brew install hashpump
 brew install hydra
+brew install ideviceinstaller
 brew install john
 brew install knock
 brew install netcat
-brew install netpbm
 brew install nikto
 brew install nmap
 brew install pngcheck
@@ -65,9 +64,6 @@ brew install sqlmap
 brew install tcpflow
 brew install tcpreplay
 brew install tcptrace
-brew install ucspi-tcp # `tcpserver` etc.
-brew install xpdf
-brew install xz
 
 # Install other useful binaries.
 brew install cmake
@@ -82,6 +78,7 @@ brew install pigz
 brew install the_silver_searcher
 brew install tree
 brew install tmux
+brew install xz
 
 # Remove outdated versions from the cellar.
 brew cleanup
