@@ -33,6 +33,12 @@ brew install grep
 brew install pyenv
 brew install rbenv
 
+# Install ip command on macOS
+brew install iproute2mac
+
+# Install md5sum, sha1sum commands on macOS
+brew install md5sha1sum
+
 # Install some security tools
 brew install aircrack-ng
 brew install apktool
