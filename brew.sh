@@ -19,9 +19,6 @@ brew install gnu-sed --with-default-names
 
 brew install bash-completion
 
-# Install `wget` with IRI support.
-brew install wget --with-iri
-
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
 
@@ -78,6 +75,7 @@ brew install pigz
 brew install the_silver_searcher
 brew install tree
 brew install tmux
+brew install wget
 brew install xz
 
 # Remove outdated versions from the cellar.
