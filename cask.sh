@@ -14,6 +14,3 @@ brew cask install skitch
 brew cask install slack
 brew cask install the-unarchiver
 brew cask install visual-studio-code
-
-brew cask cleanup
-
