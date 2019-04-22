@@ -50,3 +50,10 @@ export NVM_DIR="/Users/$USER/.nvm"
 export PATH="~/Library/Android/sdk/build-tools/27.0.3/:$PATH"
 export PATH="~/Library/Android/sdk/ndk-bundle/:$PATH"
 
+# for SDKMAN
+export SDKMAN_DIR="/Users/$USER/.sdkman"
+[[ -s "/Users/$USER/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/$USER/.sdkman/bin/sdkman-init.sh"
+
+# for Ghidra
+export GHIDRA_INSTALL_DIR="/Users/$USER/code/ghidra_app/"
+

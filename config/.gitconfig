@@ -2,7 +2,7 @@
     email = i.am.tkmru@gmail.com
     name = tkmru
 [core]
-    excludesfile = /Users/takemaru/.gitignore
+    excludesfile = ~/.gitignore
     editor = vim
 [alias]
     a = add
