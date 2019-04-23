@@ -43,17 +43,24 @@ export CPATH="$CPATH:/usr/local/include"
 export LIBRARY_PATH="$LIBRARY_PATH:/usr/local/lib"
 
 # for nvm
-export NVM_DIR="/Users/$USER/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # for android
 export PATH="~/Library/Android/sdk/build-tools/27.0.3/:$PATH"
 export PATH="~/Library/Android/sdk/ndk-bundle/:$PATH"
 
+# for jEnv
+export JENV_ROOT="$HOME/.jenv"
+if [ -d "${JENV_ROOT}" ]; then
+  export PATH="$JENV_ROOT/bin:$PATH"
+  eval "$(jenv init -)"
+fi
+
 # for SDKMAN
-export SDKMAN_DIR="/Users/$USER/.sdkman"
-[[ -s "/Users/$USER/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/$USER/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # for Ghidra
-export GHIDRA_INSTALL_DIR="/Users/$USER/code/ghidra_app/"
+export GHIDRA_INSTALL_DIR="$HOME/code/ghidra_app/"
 
