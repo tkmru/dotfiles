@@ -1,7 +1,7 @@
 #!/bin/sh
 set -eu
 
-version='1.5.1'
+version='1.7.5'
 mitamae_version="mitamae-${version}"
 
 if ! [ -f "bin/${mitamae_version}" ]; then
