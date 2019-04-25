@@ -15,6 +15,14 @@ is_setup() {
 }
 
 
+if is_setup 'global .gitignore'; then
+  if [ "$(uname)" = 'Darwin' ]; then
+    curl -o ~/.gitignore -fL 'https://raw.githubusercontent.com/github/gitignore/master/Global/macOS.gitignore'
+  else
+    curl -o ~/.gitignore -fL 'https://raw.githubusercontent.com/github/gitignore/master/Global/Linux.gitignore'
+  fi
+fi
+
 if [ "$(uname)" = 'Darwin' ]; then
   if is_setup 'Xcode Command Line Tools'; then
     xcode-select --install

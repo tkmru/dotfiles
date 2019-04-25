@@ -8,6 +8,9 @@ When running on macOS, in addition to setting up dotfiles, it install `Xcode Com
 $ git clone https://github.com/tkmru/dotfiles.git
 $ cd dotfiles
 $ ./init.sh 
+Do you setup global .gitignore? [y/N]
+y
+...
 Do you setup Xcode Command Line Tools? [y/N]
 y
 xcode-select: note: install requested for command line developer tools
