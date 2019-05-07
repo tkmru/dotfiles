@@ -1,4 +1,6 @@
 #!/bin/sh
+# based on https://github.com/akito19/dotfiles/blob/master/init.sh
+
 set -eu
 
 is_setup() {
@@ -8,12 +10,27 @@ is_setup() {
     read -r answer
     case $answer in
       'yes' | 'y') return 0 ;;
-      [nN]o | 'N') return 1 ;;
+      [nN]o | [nN]) return 1 ;;
       *) echo "Try again because you input incorrect letter. Do you setup $1? [y/N]" ;;
     esac
   done
 }
 
+
+if is_setup 'global .gitignore'; then
+  if [ "$(uname)" = 'Darwin' ]; then
+    curl -fL 'https://raw.githubusercontent.com/github/gitignore/master/Global/macOS.gitignore' >> ~/.gitignore 
+  else
+    curl -fL 'https://raw.githubusercontent.com/github/gitignore/master/Global/Linux.gitignore' >> ~/.gitignore
+  fi
+
+  echo '' >> ~/.gitignore
+  echo '# VisualStudioCode' >> ~/.gitignore
+  curl -fL 'https://raw.githubusercontent.com/github/gitignore/master/Global/VisualStudioCode.gitignore' >> ~/.gitignore
+  echo '' >> ~/.gitignore
+  echo '# Vim' >> ~/.gitignore
+  curl -fL 'https://raw.githubusercontent.com/github/gitignore/master/Global/Vim.gitignore' >> ~/.gitignore
+fi
 
 if [ "$(uname)" = 'Darwin' ]; then
   if is_setup 'Xcode Command Line Tools'; then

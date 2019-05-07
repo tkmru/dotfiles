@@ -1,13 +1,16 @@
 # dotfiles
-My development environment based on [Mitamae](https://github.com/itamae-kitchen/mitamae).
+My `dotfiles` are setup and install scripts for development environment using [Mitamae](https://github.com/itamae-kitchen/mitamae) for macOS and Ubuntu.
 
 ## Installation
-This contains not only dotfiles but also setup scripts about `Homebrew` and `Xcode Command Line Tools`.
+When running on macOS, in addition to setting up dotfiles, it install `Xcode Command Line Tools` and `Homebrew` and some tools that can be installed by Homebrew and Homebrew cask.
 
 ```
 $ git clone https://github.com/tkmru/dotfiles.git
 $ cd dotfiles
 $ ./init.sh 
+Do you setup global .gitignore? [y/N]
+y
+...
 Do you setup Xcode Command Line Tools? [y/N]
 y
 xcode-select: note: install requested for command line developer tools
@@ -19,7 +22,7 @@ y
 ```
 
 ## Update dotfiles
-Use ```deploy.sh```, when you add dotfiles. 
+Use `deploy.sh`, when you add dotfiles.
 
 ```
 $ ./deploy.sh

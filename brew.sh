@@ -72,6 +72,7 @@ brew install lsof
 brew install nkf
 brew install p7zip
 brew install pigz
+brew install sdkman
 brew install the_silver_searcher
 brew install tree
 brew install tmux
