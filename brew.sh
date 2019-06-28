@@ -69,6 +69,7 @@ brew install gron
 brew install imagemagick --with-webp
 brew install jq
 brew install lsof
+brew install nasm
 brew install nkf
 brew install p7zip
 brew install pigz
