@@ -12,6 +12,7 @@ PATH=$PATH:/bin
 PATH=$PATH:/sbin
 PATH=$PATH:~/Library/Android/sdk/platform-tools
 PATH=$PATH:~/Library/Android/android-ndk-r12b
+PATH=$PATH:~/Library/Android/sdk/ndk-bundle
 PATH=$PATH:/usr/local/texlive/2015/bin/x86_64-darwin
 export PATH
 
