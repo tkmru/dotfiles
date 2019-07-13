@@ -24,6 +24,9 @@ fi
 # for cabal
 export PATH="$HOME/.cabal/bin/:$PATH"
 
+# for mactex
+export PATH="/usr/local/texlive/2019/bin/x86_64-darwin/:$PATH"
+
 # for rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
