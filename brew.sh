@@ -29,6 +29,7 @@ brew install grep
 # Install programming enviroment.
 brew install pyenv
 brew install rbenv
+brew install go
 
 # Install ip command on macOS
 brew install iproute2mac
