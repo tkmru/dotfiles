@@ -41,6 +41,9 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 export GOPATH="$HOME/go/thirdparty:$HOME/go/myproject"
 export PATH="$HOME/go/thirdparty/bin:$HOME/go/myproject/bin:$PATH"
 
+# for Metasploit
+export PATH="/opt/metasploit-framework/bin:$PATH"
+
 # for c, cpp
 export CPATH="$CPATH:/usr/local/include"
 export LIBRARY_PATH="$LIBRARY_PATH:/usr/local/lib"
@@ -67,3 +70,8 @@ export SDKMAN_DIR="$HOME/.sdkman"
 # for Ghidra
 export GHIDRA_INSTALL_DIR="$HOME/code/ghidra_app/"
 
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f "$HOME/google-cloud-sdk/path.bash.inc" ]; then source "$HOME/google-cloud-sdk/path.bash.inc"; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f "$HOME/google-cloud-sdk/completion.bash.inc" ]; then source "$HOME/google-cloud-sdk/completion.bash.inc"; fi
