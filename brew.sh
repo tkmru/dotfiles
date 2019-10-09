@@ -31,8 +31,9 @@ brew install pyenv
 brew install rbenv
 brew install go
 
-# Install ip command on macOS
+# Install network command on macOS
 brew install iproute2mac
+brew install inetutils
 
 # Install md5sum, sha1sum commands on macOS
 brew install md5sha1sum

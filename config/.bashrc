@@ -29,6 +29,7 @@ alias up='cd ..;'
 alias ls='ls -FG'
 alias la='ls -laFG'
 alias cl='clear'
+alias d='docker'
 alias g='git'
 alias rmbr="git branch --merged | grep -v '*' | grep -v 'master' | xargs -I % git branch -d %"
 alias rmbrall="git branch | grep -v '*' | grep -v 'master' | xargs -I % git branch -D %"

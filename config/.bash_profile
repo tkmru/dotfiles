@@ -10,9 +10,6 @@ PATH=$PATH:/usr/bin
 PATH=$PATH:/usr/sbin
 PATH=$PATH:/bin
 PATH=$PATH:/sbin
-PATH=$PATH:~/Library/Android/sdk/platform-tools
-PATH=$PATH:~/Library/Android/android-ndk-r12b
-PATH=$PATH:~/Library/Android/sdk/ndk-bundle
 export PATH
 
 # for brew
@@ -34,12 +31,18 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export PATH="$HOME/.pyenv/bin:$PATH"
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
+# for inetutils
+PATH="/usr/local/opt/inetutils/libexec/gnubin:$PATH"
+
 # for MacPorts
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 
 # for go
 export GOPATH="$HOME/go/thirdparty:$HOME/go/myproject"
 export PATH="$HOME/go/thirdparty/bin:$HOME/go/myproject/bin:$PATH"
+
+# for Rust
+export PATH="$HOME/.cargo/bin:$PATH"
 
 # for Metasploit
 export PATH="/opt/metasploit-framework/bin:$PATH"
@@ -52,9 +55,10 @@ export LIBRARY_PATH="$LIBRARY_PATH:/usr/local/lib"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-# for android
-export PATH="~/Library/Android/sdk/build-tools/27.0.3/:$PATH"
-export PATH="~/Library/Android/sdk/ndk-bundle/:$PATH"
+# for Android
+export PATH="~/Library/Android/sdk/platform-tools:$PATH"      # for adb
+export PATH="~/Library/Android/sdk/ndk/20.1.5948944/:$PATH"   # for ndk-build
+export PATH="~/Library/Android/sdk/build-tools/29.0.2/:$PATH" # for aapt
 
 # for jEnv
 export JENV_ROOT="$HOME/.jenv"
@@ -75,3 +79,4 @@ if [ -f "$HOME/google-cloud-sdk/path.bash.inc" ]; then source "$HOME/google-clou
 
 # The next line enables shell command completion for gcloud.
 if [ -f "$HOME/google-cloud-sdk/completion.bash.inc" ]; then source "$HOME/google-cloud-sdk/completion.bash.inc"; fi
+export PATH="/usr/local/opt/postgresql@10/bin:$PATH"
