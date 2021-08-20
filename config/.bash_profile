@@ -13,9 +13,7 @@ PATH=$PATH:/sbin
 export PATH
 
 # for brew
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-    . $(brew --prefix)/etc/bash_completion
-fi
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # for cabal
 export PATH="$HOME/.cabal/bin/:$PATH"
@@ -29,7 +27,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # for pyenv
 export PATH="$HOME/.pyenv/bin:$PATH"
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+if which pyenv > /dev/null; then eval "$(pyenv init --path)"; fi
 
 # for inetutils
 PATH="/usr/local/opt/inetutils/libexec/gnubin:$PATH"

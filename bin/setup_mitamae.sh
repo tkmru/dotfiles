@@ -1,22 +1,23 @@
 #!/bin/sh
 set -eu
 
-version='1.7.5'
+version='1.12.7'
 mitamae_version="mitamae-${version}"
 
 if ! [ -f "bin/${mitamae_version}" ]; then
-  case "$(uname)" in
-    "Darwin")
-      mitamae_bin="mitamae-x86_64-darwin"
-      ;;
-    "Linux")
-      mitamae_bin="mitamae-x86_64-linux"
-      ;;
-    *)
-      echo "unknown uname: $(uname)"
-      exit 1
-      ;;
-  esac
+  if [ $(uname) = 'Darwin' ]; then
+    suffix="darwin"
+  else
+    suffix="linux"
+  fi
+
+  if [ $(uname -m) = 'x86_64' ]; then
+    arch="x86_64"
+  else
+    arch="aarch64"
+  fi
+
+  mitamae_bin=mitamae-$arch-$suffix
 
   # http://www.hcn.zaq.ne.jp/___/unix/curl_manual.html
   curl -o "bin/${mitamae_bin}.tar.gz" -fL "https://github.com/itamae-kitchen/mitamae/releases/download/v${version}/${mitamae_bin}.tar.gz"
