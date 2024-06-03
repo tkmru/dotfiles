@@ -3,14 +3,14 @@
 # Install macOS apps using Homebrew.
 
 # Upgrade any already-installed formulae.
-brew cask upgrade
+brew install --cask upgrade
 
-brew cask install alfred
-brew cask install docker
-brew cask install dropbox
-brew cask install google-chrome
-brew cask install google-japanese-ime
-brew cask install skitch
-brew cask install slack
-brew cask install the-unarchiver
-brew cask install visual-studio-code
+brew install --cask install alfred
+brew install --cask install docker
+brew install --cask install dropbox
+brew install --cask install google-chrome
+brew install --cask install google-japanese-ime
+brew install --cask install skitch
+brew install --cask install slack
+brew install --cask install the-unarchiver
+brew install --cask install visual-studio-code
