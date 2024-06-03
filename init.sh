@@ -54,5 +54,8 @@ if [ ! -d $HOME/dotfiles ]; then
   git clone https://github.com/tkmru/dotfiles.git ~/dotfiles
 fi
 
+echo 'Change default shell from zsh to bash'
+chsh -s /bin/bash
+
 ~/dotfiles/bin/setup_mitamae.sh
 ~/dotfiles/deploy.sh
