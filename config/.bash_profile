@@ -12,6 +12,9 @@ PATH=$PATH:/bin
 PATH=$PATH:/sbin
 export PATH
 
+# for bash
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 # for brew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
