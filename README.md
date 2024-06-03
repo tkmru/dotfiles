@@ -5,6 +5,7 @@ My `dotfiles` are setup and install scripts for development environment using [M
 When running on macOS, in addition to setting up dotfiles, it install `Xcode Command Line Tools` and `Homebrew` and some tools that can be installed by Homebrew and Homebrew cask.
 
 ```
+$ cd $HOME
 $ git clone https://github.com/tkmru/dotfiles.git
 $ cd dotfiles
 $ ./init.sh 
