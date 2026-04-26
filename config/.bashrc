@@ -23,6 +23,7 @@ function cd() {
     builtin cd -P $@ && ls -FG;
 }
 
+alias ag='ag --hidden'
 alias rm='rm -ir'
 alias mkdir='mkdir -p'
 alias up='cd ..;'
@@ -43,6 +44,7 @@ alias r='rails'
 alias br='bin/rails'
 alias py='python'
 alias ungron='gron --ungron'
+alias code='zed'
 
 # for stack
 alias ghc="stack ghc --"
@@ -57,9 +59,6 @@ shopt -s checkwinsize
 # the results of history substitution are not immediately passed to the shell parser.
 # Instead, the resulting line is loaded into the Readline editing buffer, allowing further modification.
 shopt -s histverify
-
-# for heroku
-export PATH='/usr/local/heroku/bin:$PATH'
 
 # for yarn
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
@@ -107,3 +106,7 @@ alias f='open .'
 alias objcopy='gobjcopy'
 alias objdump='gobjdump'
 alias readelf='greadelf'
+
+[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path bash)"
+
+. "$HOME/.local/bin/env"

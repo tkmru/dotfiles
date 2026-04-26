@@ -35,9 +35,6 @@ if which pyenv > /dev/null; then eval "$(pyenv init --path)"; fi
 # for inetutils
 PATH="/usr/local/opt/inetutils/libexec/gnubin:$PATH"
 
-# for MacPorts
-export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
-
 # for go
 export GOPATH="$HOME/go/thirdparty:$HOME/go/myproject"
 export PATH="$HOME/go/thirdparty/bin:$HOME/go/myproject/bin:$PATH"
@@ -61,23 +58,15 @@ export PATH="~/Library/Android/sdk/platform-tools:$PATH"      # for adb
 export PATH="~/Library/Android/sdk/ndk/20.1.5948944/:$PATH"   # for ndk-build
 export PATH="~/Library/Android/sdk/build-tools/29.0.2/:$PATH" # for aapt
 
-# for jEnv
-export JENV_ROOT="$HOME/.jenv"
-if [ -d "${JENV_ROOT}" ]; then
-  export PATH="$JENV_ROOT/bin:$PATH"
-  eval "$(jenv init -)"
-fi
-
-# for SDKMAN
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
-# for Ghidra
-export GHIDRA_INSTALL_DIR="$HOME/code/ghidra_app/"
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f "$HOME/google-cloud-sdk/path.bash.inc" ]; then source "$HOME/google-cloud-sdk/path.bash.inc"; fi
 
 # The next line enables shell command completion for gcloud.
 if [ -f "$HOME/google-cloud-sdk/completion.bash.inc" ]; then source "$HOME/google-cloud-sdk/completion.bash.inc"; fi
-export PATH="/usr/local/opt/postgresql@10/bin:$PATH"
+
+# for bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# for uv
+. "$HOME/.local/bin/env"
