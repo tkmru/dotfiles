@@ -6,11 +6,10 @@
 brew install --cask upgrade
 
 brew install --cask docker
-brew install --cask dropbox
 brew install --cask google-chrome
 brew install --cask raycast
 brew install --cask skitch
 brew install --cask slack
 brew install --cask the-unarchiver
-brew install --cask visual-studio-code
+brew install --cask zed
 brew install --cask codex
