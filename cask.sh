@@ -13,3 +13,4 @@ brew install --cask skitch
 brew install --cask slack
 brew install --cask the-unarchiver
 brew install --cask visual-studio-code
+brew install --cask codex
