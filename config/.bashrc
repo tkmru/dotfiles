@@ -106,7 +106,3 @@ alias f='open .'
 alias objcopy='gobjcopy'
 alias objdump='gobjdump'
 alias readelf='greadelf'
-
-[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path bash)"
-
-. "$HOME/.local/bin/env"
